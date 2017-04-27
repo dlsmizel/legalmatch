@@ -1,0 +1,206 @@
+//Layout
+
+html {
+  position:relative;
+  min-height:100%;
+}
+
+body {
+  margin-bottom:100px; //footer height
+  background:$color_white;
+  font-family: gotham;
+}
+
+footer{
+  //position:absolute; bottom:0;
+  width:100%; height:100px; //same body's margin-bottom
+  font-size:.7rem;
+  color:$color_gray;
+  p{margin:0;padding-top:2rem;}
+  a {
+    color:$color_gray;
+    margin:2rem;
+    &:hover {color:$color_blue;}
+    &.active {color:$color_blue;}
+  }
+}
+
+article#main {
+  color:$color_white;
+  background: #147ab7; /* Old browsers */
+  background: -moz-radial-gradient(bottom, ellipse cover, #147ab7 0%, #032c6c 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(bottom, ellipse cover, #147ab7 0%,#032c6c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at bottom, #147ab7 0%,#032c6c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#147ab7', endColorstr='#032c6c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  h1 {font-weight: lighter;}
+  h2 {font-weight: bold;}
+}
+
+
+
+form {
+  input, select, textarea {
+    border-radius:2.3rem; border:0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefffc+0,f4f6f9+100 */
+    background: #fefffc; /* Old browsers */
+    background: -moz-linear-gradient(top, #fefffc 0%, #dadee3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fefffc 0%,#dadee3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fefffc 0%,#dadee3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefffc', endColorstr='#f4f6f9',GradientType=0 ); /* IE6-9 */
+  }
+  label, input, select, textarea{width:90%; padding:1.5rem 1.5rem 1.5rem 1.5rem;}
+  input[type="checkbox"] {
+    width:auto;
+    padding:5px;
+  }
+  label {margin:0; padding:0;}
+  textarea {width:100%; height:145px;}
+  input,select {padding-left:5rem;}
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color:$color_gray;
+  }
+  input.special:focus, select.special:focus {
+    background:$color_white;
+    -webkit-box-shadow: 0px 0px 14px 6px rgba(65,123,177,1);
+    -moz-box-shadow: 0px 0px 14px 6px rgba(65,123,177,1);
+    box-shadow: 0px 0px 14px 6px rgba(65,123,177,1);
+  }
+  div#cta {
+    text-align: center;
+    margin-top:-15px;
+    a {color:$color_white;}
+  }
+  div.formgroup {
+    position:relative;
+    margin-bottom:2rem;
+    span {
+      background: $color_orange;
+      display:block;
+      border-radius:50%;
+      height:35px;
+      width:35px;
+      text-align: center;
+      vertical-align: middle;
+      line-height:2.2rem;
+      font-weight:bold;
+      margin:1.2rem;
+      position:absolute;
+    }
+    span#drop {
+      background:url(../img/drop.png) no-repeat;
+      display:block;
+      height:10px;
+      width:16px;
+      right:4.5rem;
+      bottom:.8rem;
+      position:absolute;
+    }
+  }
+  //section:first-child {border-right:1px solid $color_gray;}
+  //section:last-child {border-left:1px solid $color_gray;}
+}
+
+span.circle {
+  background: $color_orange;
+  display:block;
+  border-radius:50%;
+  height:35px;
+  width:35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height:2.2rem;
+  font-weight:bold;
+  color:$color_white;
+}
+
+div.lawyers {
+  border-bottom:1px solid $color_violet;
+  margin-top:1rem;
+  &:last-child {border:0;}
+  figure {text-align: center;}
+  figcaption {
+    line-height:1rem;
+    small, span {width:100%; display: block;}
+    small {color:$color_white; font-weight:lighter; }
+  }
+  p {
+    font-size:.8rem;
+    height:45px;
+    line-height: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+  }
+
+  img {
+    width:65px;
+    border-radius:50%;
+    border:1px solid $color_violet;
+  }
+  section.details {
+    p {margin:0;}
+    a {
+      color:$color_orange2; font-size:.8rem;
+      float:right;
+      &:hover {cursor:pointer;}
+      span.book {
+        display:inline-block;
+        width:16px;
+        height:13px;
+        margin-left:.5rem;
+        background:url(../img/book.png) no-repeat;
+      }
+    }
+  }
+}
+
+a.stars {
+  display:block;
+  width:100px; height:16px;
+  margin-top:.4rem;
+  background:url(../img/stars.png) no-repeat;
+}
+
+figure.clientrevs {
+  img {
+    width:165px;
+    border-radius:50%;
+    border:1px solid $color_violet;
+    float:left;
+  }
+  figcaption {
+    float:left;
+    line-height:1rem;
+    small, span {width:100%; display: block;}
+    small {color:$color_white; font-weight:lighter; }
+  }
+}
+
+div.modalscroll {
+  max-height:400px;
+  overflow-y:scroll;
+  span.rating {font-size:2rem;}
+  span.users {font-size:1.4rem; margin-top:.5rem;}
+  .stars.rating {margin-top:1.3rem;}
+  .checkgroup {
+    width:50%;
+    
+  }
+}
+
+/*
+article#contact_banner {
+  background:$color_blue;
+  height:550px;
+  color:$color_white;
+  section:first-child {padding:4rem 0;}
+}
+
+section#contact_submit {
+  height:100px;
+}
+*/

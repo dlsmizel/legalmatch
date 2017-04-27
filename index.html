@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>LegalMatch</title>
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <meta name="author" content="MIZEL DE LOS SANTOS">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="" />
+
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://dlsmizel.com">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dlsmizel_style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <article class="container-fluid">
+      <section class="container">
+        <img src="img/header.png" />
+      </section>
+    </article>
+    <article class="py-5" id="main">
+      <section class="container">
+        <header>
+          <h1>Find a Lawyer for your Legal Issue</h1>
+          <h2>Fast, Free and Confidential</h2>
+        </header>
+        <div class="row">
+          <section class="col-7 pt-5">
+            <form>
+              <div class="formgroup">
+                <label for="first" class="h4">Enter Zip Code or City:</label>
+                <span>1</span>
+                <input type="text" id="first" class="special" placeholder="Does not have to be where you live"/>
+              </div>
+              <div class="formgroup">
+                <label for="second" class="h4">Choose a category:</label>
+                <span>2</span>
+                <span id="drop"></span>
+                <select id="second" class="special">
+                  <option value="" disabled selected>Click to choose a legal category</option>
+                  <option>Family</option>
+                  <option>Criminal Defense</option>
+                  <option>Business</option>
+                  <option>Personal Injury</option>
+                  <option>Bankruptcy & Finances</option>
+                  <option>Products & Services</option>
+                  <option>Employment</option>
+                  <option>Real Estate</option>
+                  <option>Immigration</option>
+                  <option>Wills, Trust & Estates</option>
+                  <option>Government</option>
+                  <option>Intellectual Property</option>
+                </select>
+                <a href="#" data-toggle="modal" data-target=".modal-category2">test</a>
+              </div>
+              <div id="cta" class="lead">Can't find your category? <u><a href="#" data-toggle="modal" data-target=".modal-category">Click here.</a></u></div id="cta">
+            </form>
+          </section>
+          <section class="col-5">
+            <header class="lead">
+              Clients review LegalMatch lawyers
+            </header>
+            <div class="lawyers row">
+              <section class="pic col-4">
+                <figure>
+                  <img src="img/mizel_corporate_2x2.jpg" />
+                  <figcaption>
+                    <span>Mitchell M.</span>
+                    <small class="clearfix">Cherry Hill, NJ</small>
+                  </figcaption>
+                </figure>
+              </section>
+              <section class="details col-8">
+                <span>Family Law</span>
+                <a href="#" class="stars"></a>
+                <p class="lead">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ... dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip”
+                </p>
+                <a class="read_modal" data-toggle="modal" data-target=".modal-read">Read Review<span class="book"></span></a>
+              </section>
+            </div>
+            <div class="lawyers row">
+              <section class="pic col-4">
+                <figure>
+                  <img src="img/mizel_corporate_2x2.jpg" />
+                  <figcaption>
+                    <span>Mitchell M.</span>
+                    <small class="clearfix">Cherry Hill, NJ</small>
+                  </figcaption>
+                </figure>
+              </section>
+              <section class="details col-8">
+                <span>Family Law</span>
+                <a href="#" class="stars"></a>
+                <p class="lead">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ... dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip”
+                </p>
+                <a class="read_modal" data-toggle="modal" data-target=".modal-read">Read Review<span class="book"></span></a>
+              </section>
+            </div>
+            <div class="lawyers row">
+              <section class="pic col-4">
+                <figure>
+                  <img src="img/mizel_corporate_2x2.jpg" />
+                  <figcaption>
+                    <span>Mitchell M.</span>
+                    <small class="clearfix">Cherry Hill, NJ</small>
+                  </figcaption>
+                </figure>
+              </section>
+              <section class="details col-8">
+                <span>Family Law</span>
+                <a href="#" class="stars"></a>
+                <p class="lead">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ... dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip”
+                </p>
+                <a class="read_modal" data-toggle="modal" data-target=".modal-read">Read Review<span class="book"></span></a>
+              </section>
+            </div>
+          </section>
+        </div>
+      </section>
+    </article>
+
+    <div class="modal fade modal-read" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Client Reviews</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <figure class="clientrevs my-3 clearfix">
+              <img src="img/mizel_corporate_2x2.jpg" />
+              <figcaption class="mt-4 px-4">
+                <span class="display-4">Mitchell M.</span>
+                <span class="text-muted h3">Dallas, TX</span>
+                <span class="h3">Family Law</span>
+              </figcaption>
+            </figure>
+            <div class="container modalscroll">
+              <section>
+                <span class="float-left rating">Rating</span>
+                <span class="float-left mx-4 users">(29 users)</span>
+                <a href="#" class="stars rating float-left"></a>
+                <div class="clearfix"></div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>
+                        Overall
+                      </th>
+                      <th>
+                        <a href="#" class="stars"></a>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="lead">
+                    <tr>
+                      <td>
+                        Responded in a timely manner
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Responded in a timely manner
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Answered questions clearly
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Understood needs
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Gave complete and clear information
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Knowledgeable in legal area
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Good value for money
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Would hire again
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Would recommend to friend
+                      </td>
+                      <td>
+                        <a href="#" class="stars"></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <hr />
+              <section class="py-4">
+                <a href="#" class="stars float-left"></a>
+                <strong class="float-left">by Dexter Marchal, 06/10/2016</strong>
+                <div class="clearfix"></div>
+                <p class="lead mt-3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </section>
+              <hr />
+              <section class="py-4">
+                <a href="#" class="stars float-left"></a>
+                <strong class="float-left">by Dexter Marchal, 06/10/2016</strong>
+                <div class="clearfix"></div>
+                <p class="lead mt-3">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </p>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-category" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">OTHER CATEGORIES</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span class="text-muted">Choose the category that best fits your case</span>
+            <div class="container modalscroll">
+              <section>
+                <table class="table">
+                  <tbody class="lead">
+                    <tr>
+                      <td>
+                        <a href="#">asdf</a>
+                      </td>
+                      <td>
+                        <a href="#">asdf</a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-category2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><span class="circle float-left mr-3">3</span>Which <strong>Family law</strong> issue(s) apply to your case?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container modalscroll">
+              <form>
+                <div class="d-flex flex-row">
+                  <div class="checkgroup">
+                    <input type="checkbox" /><label>Adoptions</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" /><label>Guardianship</label>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="checkgroup">
+                    <input type="checkbox" /><label>Child Custody and Visitation</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" /><label>Paternity</label>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="checkgroup">
+                    <input type="checkbox" /><label>Child Support</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" /><label>Separations</label>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="checkgroup">
+                    <input type="checkbox" /><label>Divorce</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" /><label>Spousal Support or Alimony</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <article class="container py-5">
+        <div class="row">
+          <section class="col-3 text-center">
+            <img src="img/footer_logo.png" />
+          </section>
+          <section class="col-6 text-center">
+            <a href="#">User Agreement</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Site Map</a>
+            <p>
+              Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch©<br />
+              the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Parents Pending.
+            </p>
+          </section>
+          <section class="col-3 text-center">
+            <img src="img/footer_acc.png" />
+          </section>
+        </div>
+      </article>
+    </footer>
+  </body>
+
+</html>

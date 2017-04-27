@@ -1,0 +1,474 @@
+/************************
+DLSMIZEL CSS 2017
+************************/
+/* line 1, F:/downloads/LEGALMATCH/sass/partials/_typography.scss */
+body {
+  color: #000000;
+}
+
+/*@font-face {
+  font-family: gotham;
+  src:url(fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+  font-family: gotham;
+  src:url(fonts/Gotham-Light.otf);
+  font-weight:lighter;
+}
+*/
+/* line 1, F:/downloads/LEGALMATCH/sass/partials/_images.scss */
+.small_icon, .medium_icon, .large_icon {
+  white-space: nowrap;
+  text-indent: -999rem;
+}
+
+/* line 7, F:/downloads/LEGALMATCH/sass/partials/_images.scss */
+.small_icon {
+  background: #000000;
+  height: 80px;
+  width: 80px;
+}
+
+/* line 2, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a {
+  text-decoration: none !important;
+}
+
+/* line 5, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+.btn.btn-primary {
+  background: #02377b;
+  border: 1px solid #02377b;
+  color: #ffffff;
+  transition: 400ms ease;
+}
+
+/* line 9, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+.btn.btn-primary:hover {
+  background: #02377b;
+}
+
+/* line 12, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+.btn.btn-outline-primary {
+  border: 1px solid #02377b;
+  color: #02377b;
+  transition: 400ms ease;
+}
+
+/* line 16, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+.btn.btn-outline-primary:hover {
+  background: #02377b;
+  color: #ffffff;
+}
+
+/* line 19, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+.image_button {
+  color: #ffffff;
+  background: black;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 25, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+.image_button:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* line 31, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid {
+  min-height: 250px;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  transition: 200ms ease;
+  padding: 0;
+}
+
+/* line 37, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid:hover {
+  text-decoration: none;
+  opacity: .9;
+}
+
+/* line 40, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid:hover span {
+  bottom: 0;
+}
+
+/* line 42, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid img {
+  position: absolute;
+  left: -58%;
+  margin-left: 55%;
+  top: -10%;
+  transition: 800ms ease-out;
+}
+
+/* line 48, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid img:hover {
+  transform: scale3d(1.03, 1.03, 1);
+}
+
+/* line 52, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid p {
+  font-size: .8rem;
+  line-height: 1rem;
+}
+
+/* line 56, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid strong {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 57, F:/downloads/LEGALMATCH/sass/partials/_links.scss */
+a.grid span {
+  position: absolute;
+  bottom: -100px;
+  height: 3.5rem;
+  display: block;
+  width: 100%;
+  transition: 200ms ease-in;
+}
+
+/* line 3, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 8, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+body {
+  margin-bottom: 100px;
+  background: #ffffff;
+  font-family: gotham;
+}
+
+/* line 14, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+footer {
+  width: 100%;
+  height: 100px;
+  font-size: .7rem;
+  color: #929ba4;
+}
+
+/* line 19, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+footer p {
+  margin: 0;
+  padding-top: 2rem;
+}
+
+/* line 20, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+footer a {
+  color: #929ba4;
+  margin: 2rem;
+}
+
+/* line 23, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+footer a:hover {
+  color: #1864af;
+}
+
+/* line 24, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+footer a.active {
+  color: #1864af;
+}
+
+/* line 28, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+article#main {
+  color: #ffffff;
+  background: #147ab7;
+  /* Old browsers */
+  background: -moz-radial-gradient(bottom, ellipse cover, #147ab7 0%, #032c6c 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(bottom, ellipse cover, #147ab7 0%, #032c6c 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at bottom, #147ab7 0%, #032c6c 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#147ab7', endColorstr='#032c6c',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+/* line 36, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+article#main h1 {
+  font-weight: lighter;
+}
+
+/* line 37, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+article#main h2 {
+  font-weight: bold;
+}
+
+/* line 43, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form input, form select, form textarea {
+  border-radius: 2.3rem;
+  border: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefffc+0,f4f6f9+100 */
+  background: #fefffc;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fefffc 0%, #dadee3 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fefffc 0%, #dadee3 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fefffc 0%, #dadee3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefffc', endColorstr='#f4f6f9',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 52, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form label, form input, form select, form textarea {
+  width: 90%;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* line 53, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form input[type="checkbox"] {
+  width: auto;
+  padding: 5px;
+}
+
+/* line 57, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form label {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 58, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form textarea {
+  width: 100%;
+  height: 145px;
+}
+
+/* line 59, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form input, form select {
+  padding-left: 5rem;
+}
+
+/* line 60, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #929ba4;
+}
+
+/* line 66, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form input.special:focus, form select.special:focus {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 14px 6px #417bb1;
+  -moz-box-shadow: 0px 0px 14px 6px #417bb1;
+  box-shadow: 0px 0px 14px 6px #417bb1;
+}
+
+/* line 72, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form div#cta {
+  text-align: center;
+  margin-top: -15px;
+}
+
+/* line 75, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form div#cta a {
+  color: #ffffff;
+}
+
+/* line 77, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form div.formgroup {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+/* line 80, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form div.formgroup span {
+  background: #d68d00;
+  display: block;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.2rem;
+  font-weight: bold;
+  margin: 1.2rem;
+  position: absolute;
+}
+
+/* line 93, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+form div.formgroup span#drop {
+  background: url(../img/drop.png) no-repeat;
+  display: block;
+  height: 10px;
+  width: 16px;
+  right: 4.5rem;
+  bottom: .8rem;
+  position: absolute;
+}
+
+/* line 107, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+span.circle {
+  background: #d68d00;
+  display: block;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* line 120, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers {
+  border-bottom: 1px solid #497aa8;
+  margin-top: 1rem;
+}
+
+/* line 123, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers:last-child {
+  border: 0;
+}
+
+/* line 124, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers figure {
+  text-align: center;
+}
+
+/* line 125, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers figcaption {
+  line-height: 1rem;
+}
+
+/* line 127, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers figcaption small, div.lawyers figcaption span {
+  width: 100%;
+  display: block;
+}
+
+/* line 128, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers figcaption small {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+/* line 130, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers p {
+  font-size: .8rem;
+  height: 45px;
+  line-height: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
+}
+
+/* line 139, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers img {
+  width: 65px;
+  border-radius: 50%;
+  border: 1px solid #497aa8;
+}
+
+/* line 145, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers section.details p {
+  margin: 0;
+}
+
+/* line 146, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers section.details a {
+  color: #fbd243;
+  font-size: .8rem;
+  float: right;
+}
+
+/* line 149, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers section.details a:hover {
+  cursor: pointer;
+}
+
+/* line 150, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.lawyers section.details a span.book {
+  display: inline-block;
+  width: 16px;
+  height: 13px;
+  margin-left: .5rem;
+  background: url(../img/book.png) no-repeat;
+}
+
+/* line 161, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+a.stars {
+  display: block;
+  width: 100px;
+  height: 16px;
+  margin-top: .4rem;
+  background: url(../img/stars.png) no-repeat;
+}
+
+/* line 169, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+figure.clientrevs img {
+  width: 165px;
+  border-radius: 50%;
+  border: 1px solid #497aa8;
+  float: left;
+}
+
+/* line 175, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+figure.clientrevs figcaption {
+  float: left;
+  line-height: 1rem;
+}
+
+/* line 178, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+figure.clientrevs figcaption small, figure.clientrevs figcaption span {
+  width: 100%;
+  display: block;
+}
+
+/* line 179, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+figure.clientrevs figcaption small {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+/* line 183, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.modalscroll {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+/* line 186, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.modalscroll span.rating {
+  font-size: 2rem;
+}
+
+/* line 187, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.modalscroll span.users {
+  font-size: 1.4rem;
+  margin-top: .5rem;
+}
+
+/* line 188, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.modalscroll .stars.rating {
+  margin-top: 1.3rem;
+}
+
+/* line 189, F:/downloads/LEGALMATCH/sass/partials/_layout.scss */
+div.modalscroll .checkgroup {
+  width: 50%;
+}
+
+/*
+article#contact_banner {
+  background:$color_blue;
+  height:550px;
+  color:$color_white;
+  section:first-child {padding:4rem 0;}
+}
+
+section#contact_submit {
+  height:100px;
+}
+*/
+
+/*# sourceMappingURL=../css/dlsmizel_style.map */

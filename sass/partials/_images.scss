@@ -1,0 +1,29 @@
+%hide_texts {
+  white-space: nowrap;
+  text-indent: -999rem;
+} //this hides some texts in your icons
+
+//small icons
+.small_icon {
+  background:$color_black;
+  height:80px;
+  width:80px;
+  @extend %hide_texts;
+}
+
+.medium_icon {
+  @extend %hide_texts;
+}
+
+.large_icon {
+  @extend %hide_texts;
+}
+
+//background images
+%bg-100 {
+  background-size:cover;
+}
+%bg-100-fixed {
+  background-size:cover;
+  background-attachment: fixed;
+}
